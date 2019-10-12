@@ -6,6 +6,7 @@ bin/magento maintenance:enable
 rm -rf composer.lock
 composer clear-cache
 composer require decormarket.com/core:*
+bin/magento cache:enable
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
@@ -19,7 +20,6 @@ bin/magento setup:static-content:deploy \
 	--theme bs_eren/bs_eren3 \
 	-f en_US
 bin/magento maintenance:disable
-bin/magento cache:enable
 ```
 
 ## How to upgrade
@@ -29,6 +29,7 @@ composer remove decormarket.com/core
 rm -rf composer.lock
 composer clear-cache
 composer require decormarket.com/core:*
+bin/magento cache:enable
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
@@ -42,7 +43,6 @@ bin/magento setup:static-content:deploy \
 	--theme bs_eren/bs_eren3 \
 	-f en_US
 bin/magento maintenance:disable
-bin/magento cache:enable
 ```
 
 If you have problems with these commands, please check the [detailed instruction](https://mage2.pro/t/263).
