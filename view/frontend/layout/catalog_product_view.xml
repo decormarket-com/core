@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<page 
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
+>
+	<body>
+<!-- 2019-10-12 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+"Add a new «Shipping & Returns» to the frontend product page": https://github.com/decormarket-com/core/issues/10 -->
+		<referenceBlock name='product.info.details'>
+			<block
+				class='Magento\Framework\View\Element\Template'
+				group='detailed_info'
+				name='dm_product_tab'
+				template='DecorMarket_Core::tab.phtml'
+			>
+				<arguments>
+					<argument name='title' translate='true' xsi:type='string'><![CDATA[Shipping & Returns]]></argument>
+					<argument name='sort_order' xsi:type='string'>40</argument>
+				</arguments>
+			</block>
+		</referenceBlock>
+	</body>
+</page>
