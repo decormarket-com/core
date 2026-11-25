@@ -4,7 +4,7 @@
 	xsi:noNamespaceSchemaLocation='urn:magento:framework:View/Layout/etc/page_configuration.xsd'
 >
 	<body>
-<!-- 2019-10-12 Dmitry Fedyuk https://www.upwork.com/fl/mage2pro
+<!-- 2019-10-12 Dmitry Fedyuk https://github.com/dmitrii-fediuk
 "Add a new «Shipping & Returns» to the frontend product page": https://github.com/decormarket-com/core/issues/10 -->
 		<referenceBlock name='product.info.details'>
 			<block
